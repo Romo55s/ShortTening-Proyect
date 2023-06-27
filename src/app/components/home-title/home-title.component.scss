@@ -1,0 +1,53 @@
+@import '../../../variables';
+
+@media (max-width: 375px) {
+    .img-container {
+        display: flex;
+        justify-content: flex-start; /* Alineación a la izquierda */
+        align-items: center;
+        height: 100%;
+    }
+
+    .img-container img {
+        margin-top: 20px;
+        height: 300px;
+        width: 600px; /* Ajusta el valor para hacer la imagen más grande */
+        transform: translateX(50px); /* Mueve la imagen hacia la derecha */
+    }
+
+    .title-container{
+        display: flex;
+        padding: 15px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-family: $body-font-family;
+    }
+
+    .title-container h2{
+        margin-top: 20px;
+        font-size: 2rem;
+        color: $neutral-very-dark-blue;
+        margin-bottom: 10px;
+        line-height: 2.4rem;
+    }
+
+    .title-container p{
+        margin-bottom: 20px;
+        color: $neutral-grayish-violet;
+    }
+
+    .title-container button{
+        width: 170px;
+        border-radius: 2rem;
+        height: 45px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: white;
+        background-color: $primary-cyan;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+    }
+}
