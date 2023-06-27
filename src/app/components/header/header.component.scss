@@ -69,11 +69,26 @@ li {
         z-index: 999;
         border-radius: 10px; /* Bordes redondeados */
     }
+
+    .border{
+        margin: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Borde suave */
+    }
     
     .menu-container li {
         text-align: center;
-        margin: 20px;
+        margin: 18px;
         padding: 5px;
     }
-    
+
+    #btn-sign-up{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $primary-cyan;
+        width: 200px;
+        height: 35px;
+        border-radius: 2rem;
+        font-weight: bold;
+    }
 }
