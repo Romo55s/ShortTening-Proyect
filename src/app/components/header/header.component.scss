@@ -1,0 +1,79 @@
+@import '../../../variables';
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    font-family: $body-font-family ;
+    margin-top: 25px;
+    font-size: 1rem;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container {
+    display: block;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 375px) {
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 15px;
+    }
+
+    .hamburger-menu {
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        border-radius: 1rem;
+        background-color: $neutral-grayish-violet;
+        margin: 5px 0;
+    }
+
+    .expanded .menu {
+        display: block;
+    }
+
+    .menu-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: $primary-dark-violet;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+        margin: 2px auto;
+        color: white;
+        width: 250px;
+        z-index: 999;
+        border-radius: 10px; /* Bordes redondeados */
+    }
+    
+    .menu-container li {
+        text-align: center;
+        margin: 20px;
+        padding: 5px;
+    }
+    
+}
