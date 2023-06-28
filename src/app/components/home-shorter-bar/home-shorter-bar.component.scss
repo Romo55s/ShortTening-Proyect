@@ -1,0 +1,47 @@
+@import '../../../variables';
+
+@media (max-width: 375px) {
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        background-image: url("/assets/img/bg-boost-mobile.svg");
+        background-color: $primary-dark-violet;
+        background-size: 20rem;
+        height: 120px;
+        border-radius: 0.5rem;
+        width: 250px;
+        background-repeat: no-repeat;
+        background-position-x: 55px;
+        background-position-y: -15px;
+    }
+
+    .input-container input{
+        border: none;
+        border-radius: 0.2rem;
+        padding: 8px;
+        font-family: $body-font-family;
+        width: 220px;
+        font-size: 0.7rem;
+        margin-bottom: 10px;
+    }
+
+    .input-container button{
+        background-color: $primary-cyan;
+        border: none;
+        border-radius: 0.2rem;
+        color: white;
+        font-family: $body-font-family;
+        text-align: center;
+        width: 220px;
+        padding: 8px;
+    }
+
+    section{
+        margin-top: 45px;
+        margin-bottom: 45px;    
+    }
+
+}

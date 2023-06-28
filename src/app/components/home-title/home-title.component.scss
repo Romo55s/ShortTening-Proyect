@@ -3,7 +3,7 @@
 @media (max-width: 375px) {
     .img-container {
         display: flex;
-        justify-content: flex-start; /* Alineación a la izquierda */
+        justify-content: flex-start;
         align-items: center;
         height: 100%;
     }
@@ -11,8 +11,8 @@
     .img-container img {
         margin-top: 20px;
         height: 300px;
-        width: 600px; /* Ajusta el valor para hacer la imagen más grande */
-        transform: translateX(50px); /* Mueve la imagen hacia la derecha */
+        width: 600px;
+        transform: translateX(50px);
     }
 
     .title-container{
