@@ -1,0 +1,62 @@
+@import '../../../variables';
+
+@media (max-width: 375px) {
+    .main-cont{
+        font-family: $body-font-family;
+        text-align: center;
+        background-color: #232027;
+        color: white;
+    }
+
+
+    .main-cont h1{
+        padding-top: 40px;
+        padding-bottom: 10px;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .cont{
+        padding: 10px 10px; 
+    }
+
+    .cont h2{
+        font-size: 1rem;
+        padding: 20px 20px;
+    }
+
+    .cont li{
+        padding: 5px;
+    }
+
+    li {
+        list-style-type: none;
+      }
+
+    .icons{
+        padding-top: 25px;
+        padding-bottom: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .icons img{
+        margin: 0 12px;
+        margin-bottom: 30px;
+    }
+
+    .attribution{
+        text-align: center;
+        background-color: #50455c;
+        color: white;
+        padding: 25px 25px;
+        font-family: $body-font-family;
+    }
+
+    .attribution a{
+        text-decoration: none;
+        color: $neutral-grayish-violet
+    }
+}

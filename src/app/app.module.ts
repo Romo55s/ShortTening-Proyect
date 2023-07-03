@@ -9,6 +9,8 @@ import { HomeTitleComponent } from './components/home-title/home-title.component
 import { HomeShorterBarComponent } from './components/home-shorter-bar/home-shorter-bar.component';
 import { AdvancedStatsComponent } from './components/advanced-stats/advanced-stats.component';
 import { BoostLinksComponent } from './components/boost-links/boost-links.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { BoostLinksComponent } from './components/boost-links/boost-links.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
