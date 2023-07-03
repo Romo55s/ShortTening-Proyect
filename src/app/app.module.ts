@@ -7,7 +7,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeTitleComponent } from './components/home-title/home-title.component';
 import { HomeShorterBarComponent } from './components/home-shorter-bar/home-shorter-bar.component';
-import { AdvancedStatsComponent } from './components/advanced-stats/advanced-stats.component';
 import { BoostLinksComponent } from './components/boost-links/boost-links.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
@@ -19,7 +18,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     FooterComponent,
     HomeTitleComponent,
     HomeShorterBarComponent,
-    AdvancedStatsComponent,
     BoostLinksComponent,
   ],
   imports: [

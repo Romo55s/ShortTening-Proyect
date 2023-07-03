@@ -1,18 +1,79 @@
 @import '../../../variables';
 
+.container-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.img-container {
+    order: 2;
+}
+
+.img-container img {
+    margin-top: 20px;
+    height: 525px;
+    width: 725px;
+    transform: translateX(150px);
+}
+
+.title-container h2{
+    margin-top: 20px;
+    font-size: 5.5rem;
+    color: $neutral-very-dark-blue;
+    margin-bottom: 10px;
+    line-height: 6.5rem;
+}
+
+.title-container{
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+    font-family: $body-font-family;
+}
+
+.title-container p{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: $neutral-grayish-violet;
+}
+
+.title-container button{
+    width: 170px;
+    border-radius: 2rem;
+    height: 45px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background-color: $primary-cyan;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+
 @media (max-width: 375px) {
+    .container-title{
+        display: flex;
+        flex-direction: column;
+    }
+
     .img-container {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         height: 100%;
+        order: 0;
     }
 
     .img-container img {
         margin-top: 20px;
-        height: 300px;
-        width: 600px;
-        transform: translateX(50px);
+        height: 350px;
+        width: 525px;
+        transform: translateX(75px);
     }
 
     .title-container{
@@ -36,6 +97,7 @@
 
     .title-container p{
         margin-bottom: 20px;
+        font-size: 1rem;
         color: $neutral-grayish-violet;
     }
 

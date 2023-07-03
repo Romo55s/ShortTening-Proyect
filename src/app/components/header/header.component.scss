@@ -10,6 +10,7 @@ header {
     font-family: $body-font-family ;
     margin-top: 25px;
     font-size: 1rem;
+    margin-bottom: 50px;
 }
 
 li {
@@ -18,16 +19,76 @@ li {
     padding: 0;
 }
 
-.menu-container {
-    display: block;
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
 }
 
-.menu {
+.menu-container {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    flex-grow: 1;
+    color: $neutral-grayish-violet;
+}
+
+.menu-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0;
+}
+
+.menu-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+}
+
+.menu-left li {
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.menu-right li:hover, .menu-left li:hover{
+    color: $neutral-very-dark-violet;
+}
+
+
+.menu-right li {
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+#btn-sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary-cyan;
+    color:white;
+    width: 100px;
+    border-radius: 2rem;
+    font-weight: bold;
+    height: 40px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+#btn-sign-up:hover{
+    opacity: 50%;
 }
 
 @media (max-width: 375px) {
+    .main-container {
+        display: flex;
+        margin: 10px;
+        align-items: center;
+    }
+
     .menu {
         display: none;
     }

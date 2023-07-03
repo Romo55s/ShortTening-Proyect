@@ -7,19 +7,17 @@
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
-            <div class="menu-container" [ngClass]="{'expanded': isMenuOpen}">
-                <ul class="menu">
-                    <li><a>Features</a></li>
-                    <li><a>Pricing</a></li>
-                    <li><a>Resources</a></li>
-                </ul>
-                
-                <ul class="menu">
-                    <div class="border"></div>
-                    <li><a>Login</a></li>
-                    <li id="btn-sign-up"><a >Sign Up</a></li>
-                </ul>
-            </div>
+        </div>
+        <div class="menu-container" [ngClass]="{'expanded': isMenuOpen}">
+            <ul class="menu menu-left">
+                <li><a>Features</a></li>
+                <li><a>Pricing</a></li>
+                <li><a>Resources</a></li>
+            </ul>
+            <ul class="menu menu-right">
+                <li><a>Login</a></li>
+                <li id="btn-sign-up"><a>Sign Up</a></li>
+            </ul>
         </div>
     </nav>
 </header>
