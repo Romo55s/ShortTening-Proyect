@@ -2,9 +2,10 @@
   <div class="input-container">
     <div class="cont">
       <input type="text" placeholder="Shorten a link here..." [(ngModel)]="url" [class.error]="isInputEmpty">
+      <button (click)="validateInput()">Shorten It!</button>
       <p class="error-message" *ngIf="isInputEmpty">Please add a link</p>
     </div>
-    <button (click)="validateInput()">Shorten It!</button>
+    
   </div>
 
   <div *ngFor="let link of shortenedLinks" class="links-container-main">
