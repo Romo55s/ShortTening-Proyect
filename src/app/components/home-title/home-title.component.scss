@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin-bottom: 125px;
 }
 
 .img-container {
@@ -54,26 +55,33 @@
     text-align: center;
 }
 
+.title-container button:hover{
+    background-color: lighten($primary-cyan, 25%);
+}
+
 
 @media (max-width: 375px) {
     .container-title{
         display: flex;
         flex-direction: column;
+        margin-bottom: 0px;
     }
 
-    .img-container {
+   .img-container {
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        height: 100%;
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+        height: 250px;
+        width: 350px;
         order: 0;
     }
 
     .img-container img {
-        margin-top: 20px;
-        height: 350px;
-        width: 525px;
-        transform: translateX(75px);
+        margin-top: 0; /* Eliminar el margen superior */
+        height: 100%;
+        max-width: 100%; /* Usar ancho máximo del contenedor */
+        object-fit: contain; /* Ajustar la imagen para que quepa dentro del contenedor */
+        transform: none; /* Eliminar la transformación */
     }
 
     .title-container{

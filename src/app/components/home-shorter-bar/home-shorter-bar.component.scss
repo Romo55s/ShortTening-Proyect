@@ -1,5 +1,251 @@
 @import '../../../variables';
 
+.input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/assets/img/bg-boost-desktop.svg");
+    background-color: $primary-dark-violet;
+    background-size: 100rem;
+    height: 130px;
+    border-radius: 0.5rem;
+    width: 1500px;
+    background-repeat: no-repeat;
+    background-position-x: 50px;
+    background-position-y: -100px;
+    position: relative;
+    top: -60px;
+    z-index: 2;
+}
+
+.links-container-main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border-radius: 0.5rem;
+    width: 250px;
+    position: relative;
+    margin-bottom: 15px;
+    top: -45px;
+    margin-left: 0;
+}
+
+.urlNormal {
+    border-bottom: 1px solid $neutral-gray;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 5px;
+    color: $neutral-very-dark-violet;
+    box-sizing: border-box;
+}
+
+.urlShort {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: $primary-cyan;
+}
+
+.cont-button button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 4px;
+    background-color: $primary-cyan;
+    color: white;
+    font-family: $body-font-family;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cont-button button:hover {
+    background-color: $primary-dark-violet;
+}
+
+.cont-button button .copied {
+    background-color: $primary-dark-violet;
+}
+
+.cont-button button .copied:hover {
+    background-color: $neutral-very-dark-blue;
+}
+
+.cont-button button span {
+    transition: opacity 0.3s ease;
+}
+
+.cont-button button .copied span:first-child {
+    opacity: 0;
+}
+
+.cont-button button .copied span:last-child {
+    opacity: 1;
+}
+
+.links-container {
+    text-align: left;
+    width: 250px;
+    padding: 10px;
+    font-size: 0.8rem;
+    margin-left: 0;
+}
+
+.error {
+    border: 2px solid $secondary-red;
+    box-sizing: border-box;
+}
+
+.error-message {
+    color: $secondary-red;
+    font-size: 0.6rem;
+    position: relative;
+    right: 540px;
+    top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+.input-container input.error::placeholder {
+    color: $secondary-red;
+}
+
+.input-container input:not(.error) {
+    border: none;
+}
+
+.input-container input {
+    border-radius: 0.2rem;
+    padding: 8px;
+    font-family: $body-font-family;
+    width: 1150px;
+    font-size: 0.7rem;
+    margin-right: 20px;
+}
+
+.input-container button {
+    background-color: $primary-cyan;
+    border: none;
+    border-radius: 0.2rem;
+    color: white;
+    font-family: $body-font-family;
+    text-align: center;
+    width: 120px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input-container button:hover {
+    background-color: lighten($primary-cyan, 25%);
+}
+
+
+// Advanced Stats
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title p {
+    color: $neutral-grayish-violet;
+    font-size: 0.9rem;
+    margin: 20px;
+    text-align: center;
+}
+
+h2,
+h3 {
+    color: $neutral-very-dark-blue;
+}
+
+.main-cont {
+    background-color: #f0f1f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: $body-font-family;
+}
+
+.content {
+    background-color: white;
+    margin: 38px auto;
+    height: 230px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 0.5rem;
+}
+
+.content .img-cont {
+    position: relative;
+    background-color: $primary-dark-violet;
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -18%;
+    z-index: 1;
+}
+
+.img-cont img {
+    width: 2.3em;
+    height: 2.3em;
+}
+
+.content-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+.content-p h3,
+.content-p p {
+    margin: 0;
+}
+
+.content-p p {
+    text-align: center;
+    font-size: 0.75rem;
+    margin: 20px;
+    color: $neutral-grayish-violet;
+}
+
+.content::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 30%;
+    background-color: $primary-cyan;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -32.5%;
+    z-index: 0;
+}
+
+.no-bar::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+
 @media (max-width: 375px) {
     .input-container {
         display: flex;
@@ -118,12 +364,6 @@
         border: none;
     }
 
-
-    app-advanced-stats {
-        position: relative;
-        z-index: 1;
-    }
-
     .input-container input {
         border-radius: 0.2rem;
         padding: 8px;
@@ -131,6 +371,7 @@
         width: 220px;
         font-size: 0.7rem;
         margin-bottom: 10px;
+        margin-right: 0px;
     }
 
     .input-container button {
