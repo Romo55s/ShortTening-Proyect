@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:gh": "ng build --base-href='Romo55s.github.io/JAJRShortTeningProyect/'",
+    "build:gh": "ng build --base-href='romo55s.github.io/ShortTening-Proyect/'",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
