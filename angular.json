@@ -17,7 +17,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "baseHref": "/jajr-short-tening-proyect/",
             "outputPath": "dist/jajr-short-tening-proyect",
             "index": "src/index.html",
             "main": "src/main.ts",
