@@ -1,39 +1,123 @@
 @import '../../../variables';
 
+.main-cont {
+    font-family: $body-font-family;
+    text-align: center;
+    background-color: #232027;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 300px;
+}
+
+
+.main-cont h1 {
+    padding-top: 80px;
+    padding-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 500;
+    align-self: flex-start;
+}
+
+.cont {
+    padding: 10px;
+    text-align: left;
+}
+
+.cont h2 {
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.cont li {
+    padding: 5px;
+}
+
+li {
+    list-style-type: none;
+}
+
+li:hover {
+    color: $primary-cyan;
+    cursor: pointer;
+}
+
+.icons {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.icons img {
+    margin: 0 12px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: filter 0.3s ease-in-out;
+}
+
+.icons img:hover {
+    filter: hue-rotate(90deg);
+}
+
+.attribution {
+    text-align: center;
+    background-color: #50455c;
+    color: white;
+    padding: 25px 25px;
+    font-family: $body-font-family;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: $neutral-grayish-violet
+}
+
 @media (max-width: 375px) {
-    .main-cont{
+    .main-cont {
         font-family: $body-font-family;
         text-align: center;
         background-color: #232027;
         color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 800px;
+        justify-content: center;
     }
 
 
-    .main-cont h1{
+    .main-cont h1 {
         padding-top: 40px;
         padding-bottom: 10px;
         font-size: 2rem;
         font-weight: 500;
+        align-self: center;
     }
 
-    .cont{
-        padding: 10px 10px; 
+    .cont {
+        padding: 10px 10px;
+        text-align: center;
     }
 
-    .cont h2{
+    .cont h2 {
         font-size: 1rem;
         padding: 20px 20px;
     }
 
-    .cont li{
+    .cont li {
         padding: 5px;
     }
 
     li {
         list-style-type: none;
-      }
+    }
 
-    .icons{
+    .icons {
         padding-top: 25px;
         padding-bottom: 25px;
         display: flex;
@@ -42,12 +126,12 @@
         flex-direction: row;
     }
 
-    .icons img{
+    .icons img {
         margin: 0 12px;
         margin-bottom: 30px;
     }
 
-    .attribution{
+    .attribution {
         text-align: center;
         background-color: #50455c;
         color: white;
@@ -55,7 +139,7 @@
         font-family: $body-font-family;
     }
 
-    .attribution a{
+    .attribution a {
         text-decoration: none;
         color: $neutral-grayish-violet
     }
