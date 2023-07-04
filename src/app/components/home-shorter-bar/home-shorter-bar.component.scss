@@ -17,37 +17,53 @@
     position: relative;
     top: -60px;
     z-index: 2;
+    margin-bottom: 15px;
 }
 
 .links-container-main {
     background-color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: 50px;
     border-radius: 0.5rem;
-    width: 250px;
+    width: 1500px;
     position: relative;
     margin-bottom: 15px;
     top: -45px;
     margin-left: 0;
 }
 
+.links-container {
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    font-size: 0.8rem;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.url-btn-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .urlNormal {
-    border-bottom: 1px solid $neutral-gray;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    margin: 25px;
     padding-bottom: 5px;
     color: $neutral-very-dark-violet;
-    box-sizing: border-box;
 }
 
 .urlShort {
     padding-top: 5px;
     padding-bottom: 5px;
     color: $primary-cyan;
+    padding-right: 20px;
 }
 
 .cont-button button {
@@ -89,14 +105,6 @@
     opacity: 1;
 }
 
-.links-container {
-    text-align: left;
-    width: 250px;
-    padding: 10px;
-    font-size: 0.8rem;
-    margin-left: 0;
-}
-
 .error {
     border: 2px solid $secondary-red;
     box-sizing: border-box;
@@ -125,7 +133,7 @@
     padding: 8px;
     font-family: $body-font-family;
     width: 1150px;
-    font-size: 0.7rem;
+    font-size: 1rem;
     margin-right: 20px;
 }
 
@@ -138,6 +146,7 @@
     text-align: center;
     width: 120px;
     padding: 8px;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -265,6 +274,7 @@ h3 {
         position: relative;
         top: -60px;
         z-index: 2;
+        margin-bottom: 0px;
     }
 
     .links-container-main {
@@ -290,12 +300,15 @@ h3 {
         padding-bottom: 5px;
         color: $neutral-very-dark-violet;
         box-sizing: border-box;
-    }
+        max-width: 100%;
+        margin: 0px;
+      }      
 
     .urlShort {
         padding-top: 5px;
         padding-bottom: 5px;
         color: $primary-cyan;
+        padding-right: 0px;
     }
 
     .cont-button button {
@@ -337,12 +350,20 @@ h3 {
         opacity: 1;
     }
 
+    .url-btn-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .links-container {
         text-align: left;
         width: 250px;
         padding: 10px;
         font-size: 0.8rem;
         margin-left: 0;
+        display: flex;
+        flex-direction: column;
     }
 
     .error {
@@ -355,7 +376,7 @@ h3 {
         font-size: 0.6rem;
         position: relative;
         right: 64px;
-        top: -55px;
+        top: -53px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-style: italic;
     }
@@ -383,6 +404,7 @@ h3 {
         text-align: center;
         width: 220px;
         padding: 8px;
+        font-size: 0.7rem;
         cursor: pointer;
     }
 

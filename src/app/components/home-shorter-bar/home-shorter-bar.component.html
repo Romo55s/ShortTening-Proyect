@@ -13,14 +13,16 @@
       <div class="urlNormal">
         <p><span>{{ link.originalUrl }}</span></p>
       </div>
-      <div class="urlShort">
-        <p><span>{{ link.shortLink }}</span> </p>
-      </div>
-      <div class="cont-button">
-        <button (click)="copyLink(link)" [class.copied]="link.isCopied">
-          <span *ngIf="!link.isCopied">Copy</span>
-          <span *ngIf="link.isCopied">Copied!</span>
-        </button>
+      <div class="url-btn-cont">
+        <div class="urlShort">
+          <p><span>{{ link.shortLink }}</span> </p>
+        </div>
+        <div class="cont-button">
+          <button (click)="copyLink(link)" [class.copied]="link.isCopied">
+            <span *ngIf="!link.isCopied">Copy</span>
+            <span *ngIf="link.isCopied">Copied!</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
